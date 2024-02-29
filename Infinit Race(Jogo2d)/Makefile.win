@@ -1,0 +1,29 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.4.1
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = "Infinit\ Race.o"
+LINKOBJ  = "Infinit Race.o"
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc -lglut32 -lopengl32 -lglu32 -lopengl32 -lglu32 
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include"
+BIN      = "Infint Race.exe"
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+"Infinit\ Race.o": Infinit\ Race.cpp
+	$(CPP) -c "Infinit Race.cpp" -o "Infinit Race.o" $(CXXFLAGS)

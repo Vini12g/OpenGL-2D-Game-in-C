@@ -1,0 +1,10 @@
+1 Para o game 2D  abra o arquivo de nome infinite Race de extensão .dev c++ project
+
+2 para o projeto 3d apenas garanta que o arquivo glut esteja na pasta e rode o codigo
+
+
+alunos:
+
+lucas de oliveira lessa  02020015
+
+andre vinicius guimaraes  02011229
